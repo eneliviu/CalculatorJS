@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
-        crossorigin="anonymous">
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,9 +19,27 @@
     </h1>
     
     <div class="game-area">
-
+        <div class="controls-area">
+            <button class="btn btn--big btn--green"></button>
+                <i class = "fas fa-plus"></i>
+            <button class="btn btn--big btn--blue"></button>
+                <i class = "fas fa-minus"></i>
+            <button class="btn btn--big btn--orange"></button>
+                <i class = "fas fa-times"></i>
+            <button class="btn btn--big btn--red"></button>
+                <i class = "fas fa-divide"></i>
+        </div>
     </div>
 
+    <div class="question-area">
+        <span id="operand1">0</span>
+        <span id="operator">x</span>
+        <span id="operand2">0</span>
+        <span>=</span>
+        <p class="asnswer-message">Enter answer:</p>
+        <input id="answer-box" type="number">
+    </div>
+    <button class="btn btn--gray">Submit answer</button>
     <div class="score-area">
         <p class="scores">Correct answers <span id="score">0</span></p>
         <p class="scores">Incorect answers<span id="incorect">0</span></p>
